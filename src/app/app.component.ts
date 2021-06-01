@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Socket } from 'ngx-socket-io';
-
+import { SocketService } from './services/socket.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +8,7 @@ import { Socket } from 'ngx-socket-io';
 })
 export class AppComponent implements OnInit {
   constructor(
-    private Socket: Socket,
+    private SocketService: SocketService,
   ){}
   ngOnInit() {
     console.log('test');
